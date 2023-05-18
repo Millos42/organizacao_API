@@ -5,12 +5,13 @@ const app = express();
 const departamentosRoute = require('./routes/departamentoRoute')
 const dependentesRoute = require('./routes/dependentesRoute')
 const funcionariosRoute = require('./routes/funcionariosRoute')
-
+const projetosRoute = require('./routes/projetosRoute')
 
 app.use(express.json());
 app.use('/departamento', departamentosRoute);
 app.use('/dependentes', dependentesRoute);
 app.use('/funcionarios', funcionariosRoute);
+app.use('/projetos', projetosRoute);
 
 
 
